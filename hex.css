@@ -1,0 +1,129 @@
+/*
+Trapez spinner
+*/
+.hexagon_spinner {
+    position: relative;
+    display: inline-block;
+    width: 68px;
+    height: 60px;
+}
+.hexagon_spinner .trapez {
+    position: absolute;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 15px solid rgba(255,255,255,.5);
+    height: 0;
+    width: 14px;
+    left: 18px;
+    top: 0px;
+    -webkit-transform-origin:50% 200%;
+    -webkit-animation-name:hexagon_spinner_anim;
+    -webkit-animation-duration:0.9s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: ease-out;
+    
+    -moz-transform-origin:50% 200%;
+    -moz-animation-name:hexagon_spinner_anim;
+    -moz-animation-duration:0.9s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-timing-function: ease-out;
+    
+    transform-origin:50% 200%;
+    animation-name:hexagon_spinner_anim;
+    animation-duration:0.9s;
+    animation-iteration-count:infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+}
+.hexagon_spinner.dark .trapez {
+    border-top-color: rgba(0,0,0,.3);
+}
+.hexagon_spinner.white .trapez {
+    border-top-color: rgba(255,255,255,1);
+}
+.hexagon_spinner.big {
+    width: 113px;
+    height: 100px;
+}
+.hexagon_spinner.big .trapez {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top-width: 25px;
+    width: 24px;
+    left: 30px;
+    top: 0px;
+}
+.hexagon_spinner.huge {
+    width: 274px;
+    height: 240px;
+}
+.hexagon_spinner.huge .trapez {
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top-width: 60px;
+    width: 62px;
+    left: 72px;
+    top: 0px;
+}
+.hexagon_spinner.small {
+    width: 23px;
+    height: 20px;
+}
+.hexagon_spinner.small .trapez {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top-width: 4px;
+    width: 4px;
+    left: 8px;
+    top: 0px;
+}
+.hexagon_spinner .trapez_1 {
+    -webkit-transform: rotate(0deg);
+    -webkit-animation-delay:-0.75s;
+    transform: rotate(0deg);
+    animation-delay:-0.75s;
+}
+.hexagon_spinner .trapez_2 {
+    -webkit-transform: rotate(60deg);
+    -webkit-animation-delay:-0.60s;
+    transform: rotate(60deg);
+    animation-delay:-0.60s;
+}
+.hexagon_spinner .trapez_3 {
+    -webkit-transform: rotate(120deg);
+    -webkit-animation-delay:-0.45s;
+    transform: rotate(120deg);
+    animation-delay:-0.45s;
+}
+.hexagon_spinner .trapez_4 {
+    -webkit-transform: rotate(-180deg);
+    -webkit-animation-delay:-0.30s;
+    transform: rotate(-180deg);
+    animation-delay:-0.30s;
+}
+.hexagon_spinner .trapez_5 {
+    -webkit-transform: rotate(-120deg);
+    -webkit-animation-delay:-0.15s;
+    transform: rotate(-120deg);
+    animation-delay:-0.15s;
+}
+.hexagon_spinner .trapez_6 {
+    -webkit-transform: rotate(-60deg);
+    -webkit-animation-delay:0.0s;
+    transform: rotate(-60deg);
+    animation-delay:0.0s;
+}
+@-webkit-keyframes hexagon_spinner_anim{
+    0%{opacity:1}
+    100%{opacity: 0}
+}
+@-moz-keyframes hexagon_spinner_anim{
+    0%{opacity:1}
+    100%{opacity: 0}
+}
+@keyframes hexagon_spinner_anim{
+    0%{opacity:1}
+    100%{opacity: 0}
+}

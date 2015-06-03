@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="hex.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="hex.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('body').append(tplHexLoader('huge', 'dark'));
+	});
+	</script>
+</head>
+<body style="background: #ff0">
+Hex loader:
+<div class="hexagon_spinner dark big">
+	<div class="trapez_1 trapez"></div>
+	<div class="trapez_2 trapez"></div>
+	<div class="trapez_3 trapez"></div>
+	<div class="trapez_4 trapez"></div>
+	<div class="trapez_5 trapez"></div>
+	<div class="trapez_6 trapez"></div>
+</div>
+</body>
+</html>

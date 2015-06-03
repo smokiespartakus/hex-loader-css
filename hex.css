@@ -16,6 +16,7 @@ Trapez spinner
     width: 14px;
     left: 18px;
     top: 0px;
+    box-sizing: content-box;
     -webkit-transform-origin:50% 200%;
     -webkit-animation-name:hexagon_spinner_anim;
     -webkit-animation-duration:0.9s;
